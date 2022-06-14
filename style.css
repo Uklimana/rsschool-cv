@@ -1,2 +1,113 @@
+@font-face {
+  font-family: NotoSerif, Serif;
+  src: url(assets/fonts/NotoSerif-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
 body {
-  color: red;}
+  min-height: 100vh;
+  font-size: 18px;
+}
+.container {
+  max-width: 1440px;
+  margin: 10px auto;
+}
+html {
+  scroll-behavior: smooth; 
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  transition: .3s;
+  text-decoration: none;
+  color: black;
+}
+.section {
+  padding: 0px 10px;
+}
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+nav {
+  display: block;
+}
+header, footer {
+background-color: rgb(98, 227, 66);
+}
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin: 0;
+  padding: 4px;
+}
+.section-title {
+color: rgb(38, 114, 89);
+}
+
+main {
+  display: flex;
+  padding-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s;
+}
+a:hover {
+  color: white;
+}
+.section-item {
+  position: relative;
+  padding-left: 30px;
+}
+#profile {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  margin: 10px auto;
+  padding: 15px;
+  letter-spacing: 2px;
+  background: #035611;
+  border: 2px dashed white;
+  color: white;
+  box-shadow: 0 0 0 4px #035611;
+}
+#profile h1, #profile h3 {
+color: rgb(242, 243, 242);
+font-variant: small-caps;
+}
+#profile div {
+  padding-left: 50px;
+  text-align: center;
+}
+footer {
+display: flex;
+justify-content: space-between;
+border-top: solid #035611 thin;
+}
+#photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 25%;
+}
+#rss {
+    width: 120px;
+    height: 50px;
+    background-image: url(https://rs.school/images/rs_school_js.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.footer {
+  padding-left: 40px;
+}
+.section .section-title {
+  text-decoration: solid underline;
+}
